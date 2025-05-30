@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Expense Title -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense Title"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:contentDescription="Expense title" />
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/detailAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:contentDescription="Amount spent" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/detailDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:contentDescription="Date of expense" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/detailCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:contentDescription="Category of expense" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="Attached image for the expense" />
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnEditExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
+                android:contentDescription="Edit this expense" />
+
+            <Button
+                android:id="@+id/btnDeleteExpense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:gravity="center"
+                android:contentDescription="Delete this expense" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

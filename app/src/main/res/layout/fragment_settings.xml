@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- 👤 User Status -->
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="User login status" />
+
+        <!-- 💵 Set Monthly Budget -->
+        <Button
+            android:id="@+id/btnSetBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Monthly Budget"
+            android:drawableStart="@android:drawable/ic_input_add"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Set your monthly budget" />
+
+        <!-- ❓ Help -->
+        <Button
+            android:id="@+id/btnHelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:drawableStart="@android:drawable/ic_menu_help"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Open help or support" />
+
+        <!-- 🔐 Sign In -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in with Google"
+            android:drawableStart="@android:drawable/ic_menu_send"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Sign in with Google account" />
+
+        <!-- 🔓 Sign Out -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign out"
+            android:drawableStart="@android:drawable/ic_lock_power_off"
+            android:visibility="gone"
+            android:contentDescription="Sign out of your account" />
+    </LinearLayout>
+</ScrollView>

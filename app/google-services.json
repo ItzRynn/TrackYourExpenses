@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "753077910183",
+    "project_id": "trackyourexpenses-ae8b5",
+    "storage_bucket": "trackyourexpenses-ae8b5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753077910183:android:733fe6e63844c9c914b982",
+        "android_client_info": {
+          "package_name": "com.example.TrackYourExpenses2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753077910183-gd4lv91uprt515l1f8g37m02808c2trd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.TrackYourExpenses2",
+            "certificate_hash": "c5abae4f06001645e435166c260272b2ebf18bc8"
+          }
+        },
+        {
+          "client_id": "753077910183-pgcmufis8vjmp5kiggncfsruhvqd2icg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlM6qE2Z0mTIqixCEo_ieXJSykZImnEfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753077910183-pgcmufis8vjmp5kiggncfsruhvqd2icg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

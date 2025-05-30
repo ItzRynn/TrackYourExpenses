@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvHomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Your Expenses"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Balance Overview -->
+        <TextView
+            android:id="@+id/balanceBox"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#DDDDDD"
+            android:gravity="center"
+            android:text="Balance"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Current balance" />
+
+        <TextView
+            android:id="@+id/totalSpentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Spent (This Month):"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/remainingBudgetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remaining Budget:"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/usagePercentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Used: 0%"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp" />
+
+        <ProgressBar
+            android:id="@+id/budgetProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@android:color/holo_blue_dark"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Budget usage progress" />
+
+        <!-- Category Breakdown -->
+        <TextView
+            android:id="@+id/categoryBreakdownLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spending Breakdown:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:id="@+id/categoryBreakdownLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal" />
+
+        <!-- Daily Spend Comparison -->
+        <TextView
+            android:id="@+id/dailySpendText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Average Daily Spend"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp" />
+
+        <LinearLayout
+            android:id="@+id/spendToggleButtons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/btnDaily"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily"
+                android:contentDescription="View daily spending" />
+
+            <Button
+                android:id="@+id/btnWeekly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly"
+                android:layout_marginStart="12dp"
+                android:contentDescription="View weekly spending" />
+        </LinearLayout>
+
+        <!-- Navigation Buttons -->
+        <Button
+            android:id="@+id/viewAnalyticsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Analytics"
+            android:layout_marginBottom="8dp"
+            android:contentDescription="Navigate to analytics screen" />
+
+        <Button
+            android:id="@+id/addExpenseButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Expense"
+            android:contentDescription="Navigate to add expense screen" />
+    </LinearLayout>
+</ScrollView>
